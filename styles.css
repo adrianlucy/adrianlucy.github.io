@@ -1,9 +1,26 @@
 body {
-    background: url('background_tile.jpg') repeat, rgba(255, 255, 255, 0.5);
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'GNU Unifont', Verdana, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.125;
     color: #000;
     text-align: left;
-    padding: 20px;
+    padding: 100px;
+  }
+  
+  body::before { /* White overlay */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+  }
+  
+  body {
+    background: url('images/background_tile.jpg') repeat;
+    min-height: 100vh;
   }
